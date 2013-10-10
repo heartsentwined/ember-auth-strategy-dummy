@@ -5,3 +5,4 @@ Em.onLoad 'Ember.Application', (application) ->
 
     initialize: (container, app) ->
       app.register 'authStrategy:dummy', Em.Auth.DummyAuthStrategy
+      app.inject 'authStrategy:dummy', 'auth', 'auth:main'
