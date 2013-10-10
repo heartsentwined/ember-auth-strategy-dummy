@@ -4,5 +4,6 @@ Em.onLoad 'Ember.Application', (application) ->
     before: 'ember-auth-load'
 
     initialize: (container, app) ->
-      app.register 'authStrategy:dummy', Em.Auth.DummyAuthStrategy
+      app.register 'authStrategy:dummy', Em.Auth.DummyAuthStrategy, \
+      { singleton: true }
       app.inject 'authStrategy:dummy', 'auth', 'auth:main'
