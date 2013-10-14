@@ -12,3 +12,8 @@ A strategy adapter that does nothing - designed for unit tests.
 App.Auth = Em.Auth.extend
   strategy: 'dummy'
 ```
+
+License
+=======
+
+MIT
